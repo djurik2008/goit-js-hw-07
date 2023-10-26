@@ -3,11 +3,11 @@ import {galleryItems} from "./gallery-items.js";
 
 const galleryContainer = document.querySelector(".gallery");
 
-galleryContainer.insertAdjacentHTML("beforeend", createMarcup(galleryItems));
+galleryContainer.insertAdjacentHTML("beforeend", createMarkup(galleryItems));
 
 galleryContainer.addEventListener("click", onImgClick);
 
-function createMarcup(arr) {
+function createMarkup(arr) {
   return arr
     .map(
       ({preview, original, description}) => `<li class="gallery__item">
